@@ -1,0 +1,27 @@
+@import "../utils/container.scss";
+@import "../component/button.scss";
+.app-header {
+  @include container-widths;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__logo-box {
+    img {
+      width: 72px;
+      height: 52px;
+    }
+  }
+  &__btn-box {
+    display: flex;
+    align-items: center;
+    &__btn {
+      @include defaultBtn;
+    }
+    &__ornamental-btn {
+      @include ornamentalBtn;
+      margin-left: 36px;
+    }
+  }
+}

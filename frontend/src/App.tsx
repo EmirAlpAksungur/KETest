@@ -1,7 +1,7 @@
 import React from "react";
-
+import Main from "./pages/Main";
 function App() {
-  return <React.Fragment>App</React.Fragment>;
+  return <Main />;
 }
 
 export default App;
