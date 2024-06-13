@@ -32,6 +32,9 @@
         &__btn {
           background-color: #ffffff;
           color: black;
+          &:hover {
+            background-color: $greyscale-300;
+          }
         }
         margin-right: 16px;
       }

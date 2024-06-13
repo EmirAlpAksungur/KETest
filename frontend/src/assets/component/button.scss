@@ -33,6 +33,10 @@
     white-space: nowrap;
     z-index: 9999;
     line-height: 18px;
+    cursor: pointer;
+    &:hover {
+      background-color: $greyscale-900;
+    }
   }
   &__ornamental {
     width: 100%;
