@@ -30,6 +30,7 @@
     @include ornamentalHelper;
     color: $secondary-colors-light;
     background-color: $secondary-colors-dark;
+    white-space: nowrap;
     z-index: 9999;
     line-height: 18px;
   }

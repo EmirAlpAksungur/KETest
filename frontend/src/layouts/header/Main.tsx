@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "./Logo";
+import MenuIcon from "./MenuIcon";
 import "../../assets/layouts/header.scss";
 
 const Main: React.FC = () => {
@@ -19,6 +20,9 @@ const Main: React.FC = () => {
           </div>
           <div className="app-header__btn-box__ornamental-btn__ornamental"></div>
         </div>
+      </div>
+      <div className="app-header__mobile-menu">
+        <MenuIcon />
       </div>
     </div>
   );

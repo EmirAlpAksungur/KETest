@@ -16,12 +16,27 @@
   &__btn-box {
     display: flex;
     align-items: center;
+    margin-right: 15px;
     &__btn {
       @include defaultBtn;
     }
     &__ornamental-btn {
       @include ornamentalBtn;
       margin-left: 36px;
+    }
+  }
+  &__mobile-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .app-header {
+    &__btn-box {
+      display: none;
+    }
+    &__mobile-menu {
+      display: inline-block;
     }
   }
 }
