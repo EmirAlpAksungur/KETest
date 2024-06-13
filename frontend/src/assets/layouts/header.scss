@@ -30,8 +30,25 @@
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1024px) {
   .app-header {
+    &__logo-box {
+      img {
+        width: 55px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app-header {
+    &__logo-box {
+      img {
+        width: 58px;
+        height: 42px;
+      }
+    }
     &__btn-box {
       display: none;
     }

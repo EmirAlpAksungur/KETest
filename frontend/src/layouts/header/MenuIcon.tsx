@@ -1,7 +1,7 @@
 import React from "react";
-import applogo from "../../assets/Img/menu-icon.png";
-const Logo: React.FC = () => {
-  return <img src={applogo}></img>;
+import menuIcon from "../../assets/Img/menu-icon.png";
+const MenuIcon: React.FC = () => {
+  return <img src={menuIcon}></img>;
 };
 
-export default React.memo(Logo);
+export default React.memo(MenuIcon);

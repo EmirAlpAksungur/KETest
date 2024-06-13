@@ -1,0 +1,149 @@
+@import "../utils/container.scss";
+@import "../component/button.scss";
+@import "../palette/palette.scss";
+@mixin typography {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 700;
+  font-size: 17rem;
+  line-height: 170px;
+  @media (max-width: 1200px) {
+    font-size: 13rem;
+    line-height: 130px;
+  }
+  @media (max-width: 1024px) {
+    font-size: 10rem;
+    line-height: 130px;
+  }
+  @media (max-width: 768px) {
+    font-size: 6.2rem;
+    line-height: 80px;
+  }
+}
+.section-one {
+  @include container-widths;
+  margin: auto;
+  margin-top: 63px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  &__content {
+    &__header {
+      &__miami {
+        @include typography();
+        margin-top: 40px;
+        background: linear-gradient(
+          to left,
+          $brand-color-fancy-bottom,
+          $brand-color-fancy-top
+        );
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+      }
+      &__walke {
+        @include typography();
+        letter-spacing: -5%;
+        margin-bottom: 40px;
+      }
+      &__r {
+        letter-spacing: -5%;
+        position: absolute;
+        @include typography();
+        color: $secondary-colors-light;
+      }
+    }
+    &__body {
+      font-family: "Plus Jakarta Sans";
+      font-size: 2rem;
+      color: $secondary-colors-grey;
+    }
+    &__btn {
+      margin-top: 40px;
+      width: max-content;
+      @include ornamentalBtn;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section-one {
+    &__image {
+      img {
+        width: 431.5px;
+        height: 538.6px;
+      }
+      &__content {
+        &__header {
+          &__walke {
+            letter-spacing: -3.5%;
+          }
+          &__r {
+            letter-spacing: -3.5%;
+          }
+        }
+        &__body {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section-one {
+    &__image {
+      img {
+        width: 409px;
+        height: 510px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-one {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 332px;
+    &__content {
+      &__header {
+        position: relative;
+        top: -80px;
+        text-align: center;
+        &__miami {
+          color: $secondary-colors-light;
+          background: none;
+          -webkit-background-clip: border-box;
+          -moz-background-clip: border-box;
+          background-clip: border-box;
+          -webkit-text-fill-color: initial;
+          -moz-text-fill-color: initial;
+          margin-top: 0px;
+        }
+        &__walke {
+          margin-bottom: 0px;
+        }
+        &__r {
+          color: $secondary-colors-dark;
+        }
+      }
+      &__body {
+        font-family: "Plus Jakarta Sans";
+        font-size: 2rem;
+        color: $secondary-colors-grey;
+        position: relative;
+        top: -40px;
+      }
+      &__btn {
+        margin: 2% auto auto;
+      }
+    }
+    &__image {
+      img {
+        width: 327px;
+        height: 402px;
+      }
+    }
+  }
+}

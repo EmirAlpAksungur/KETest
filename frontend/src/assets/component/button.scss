@@ -9,7 +9,7 @@
 @mixin defaultBtn {
   @include btnHelper;
   line-height: 27px;
-  padding: 8px;
+  padding: 8px 18px;
   border-radius: 4px;
   cursor: pointer;
   &:hover {
@@ -49,5 +49,10 @@
       $brand-color-fancy-bottom,
       $brand-color-fancy-top
     );
+  }
+  @media (max-width: 1200px) {
+    &__btn {
+      font-size: 1.4rem;
+    }
   }
 }
