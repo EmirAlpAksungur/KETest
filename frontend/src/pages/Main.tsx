@@ -7,6 +7,7 @@ import SectionThree from "../layouts/sectionThree/Main";
 import SectionFour from "../layouts/sectionFour/Main";
 import SectionFive from "../layouts/sectionFive/Main";
 import SectionSix from "../layouts/sectionSix/Main";
+import SectionSeven from "../layouts/sectionSeven/Main";
 import "../assets/pages/app.scss";
 
 const Main: React.FC = () => {
@@ -19,6 +20,7 @@ const Main: React.FC = () => {
       <SectionFour />
       <SectionFive />
       <SectionSix />
+      <SectionSeven />
     </div>
   );
 };
