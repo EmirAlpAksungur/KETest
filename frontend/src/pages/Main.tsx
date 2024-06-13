@@ -10,6 +10,7 @@ import SectionSix from "../layouts/sectionSix/Main";
 import SectionSeven from "../layouts/sectionSeven/Main";
 import SectionEight from "../layouts/sectionEight/Main";
 import SectionNine from "../layouts/sectionNine/Main";
+import Footer from "../layouts/footer/Main";
 import "../assets/pages/app.scss";
 
 const Main: React.FC = () => {
@@ -25,6 +26,7 @@ const Main: React.FC = () => {
       <SectionSeven />
       <SectionEight />
       <SectionNine />
+      <Footer />
     </div>
   );
 };

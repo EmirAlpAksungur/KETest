@@ -1,4 +1,10 @@
 @import "../palette/palette.scss";
 .app {
   background-color: $secondary-colors-light;
+  &__divider {
+    border: none;
+    width: 100%;
+    height: 2px;
+    background-color: #bbbbbb;
+  }
 }
