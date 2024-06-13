@@ -32,19 +32,19 @@ const Main: React.FC = () => {
         modules={[Autoplay]}
       >
         <SwiperSlide key={0}>
-          <img src={one}></img>
+          <img src={one} className="section-two__icon"></img>
         </SwiperSlide>
         <SwiperSlide key={1}>
-          <img src={two}></img>
+          <img src={two} className="section-two__icon"></img>
         </SwiperSlide>
         <SwiperSlide key={2}>
-          <img src={three}></img>
+          <img src={three} className="section-two__icon"></img>
         </SwiperSlide>
         <SwiperSlide key={3}>
-          <img src={four}></img>
+          <img src={four} className="section-two__icon"></img>
         </SwiperSlide>
         <SwiperSlide key={4}>
-          <img src={five}></img>
+          <img src={five} className="section-two__icon"></img>
         </SwiperSlide>
       </Swiper>
     </div>

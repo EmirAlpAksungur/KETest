@@ -31,16 +31,7 @@
       &__miami {
         @include typography();
         margin-top: 40px;
-        background: linear-gradient(
-          to left,
-          $brand-color-fancy-bottom,
-          $brand-color-fancy-top
-        );
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-text-fill-color: transparent;
+        @include themedText;
       }
       &__walke {
         @include typography();

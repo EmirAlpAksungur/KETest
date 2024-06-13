@@ -13,6 +13,9 @@
     color: $secondary-colors-grey;
     margin-bottom: 40px;
   }
+  &__icon {
+    width: 85%;
+  }
 }
 
 @media screen and (max-width: 1200px) {

@@ -21,3 +21,16 @@ $greyscale-700: #4d5461;
 $greyscale-800: #394150;
 $greyscale-900: #212936;
 $greyscale-1000: #0b0a0f;
+
+@mixin themedText() {
+  background: linear-gradient(
+    to left,
+    $brand-color-fancy-bottom,
+    $brand-color-fancy-top
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}

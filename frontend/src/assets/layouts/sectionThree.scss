@@ -1,0 +1,125 @@
+@import "../utils/container.scss";
+@import "../component/button.scss";
+@import "../palette/palette.scss";
+
+.section-three {
+  @include container-widths;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+  &__content {
+    flex: 1;
+    padding-right: 80px;
+    &__header {
+      font-size: 1.4rem;
+      font-weight: 600;
+      font-family: "Plus Jakarta Sans";
+      letter-spacing: 15%;
+      line-height: 22.4px;
+      width: max-content;
+      @include themedText();
+    }
+    &__header-secondary {
+      font-weight: 600;
+      font-size: 4rem;
+      font-family: "Poppins";
+    }
+    &__body {
+      font-size: 1.6rem;
+      font-weight: 500;
+      font-family: "Plus Jakarta Sans";
+      margin: 20px 0px 30px;
+      line-height: 22.4px;
+      color: $greyscale-500;
+    }
+    &__btn {
+      width: max-content;
+      @include ornamentalBtn;
+    }
+  }
+  &__img-box {
+    flex: 1;
+    display: flex;
+    gap: 16px;
+    &__left {
+      margin-top: 50px;
+      flex: 1;
+    }
+    &__right {
+      flex: 1;
+    }
+  }
+}
+.section-three-card {
+  margin-bottom: 16px;
+  &__header {
+    font-family: "Poppins";
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 33.6px;
+  }
+  &__body {
+    font-family: "Poppins";
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 33.6px;
+    color: $greyscale-500;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .section-three {
+    &__content {
+      &__header-secondary {
+        font-size: 3.2rem;
+      }
+      &__body {
+        font-size: 1.2rem;
+        line-height: 16.8px;
+      }
+    }
+  }
+  .section-three-card {
+    &__header {
+      font-size: 1.8rem;
+      line-height: 25.2px;
+    }
+    &__body {
+      font-size: 1.2rem;
+      line-height: 16.8px;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section-three {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-three {
+    &__content {
+      flex: 0 1 auto;
+      &__header-secondary {
+        font-size: 2.8rem;
+      }
+    }
+    &__img-box {
+      flex: 0 1 auto;
+      flex-wrap: wrap;
+    }
+  }
+  .section-three-card {
+    display: block;
+    &__image {
+      min-width: 100%;
+    }
+    &__header {
+      font-size: 2.4rem;
+      line-height: 33.6px;
+    }
+    &__body {
+      font-size: 1.6rem;
+      line-height: 33.6px;
+    }
+  }
+}
