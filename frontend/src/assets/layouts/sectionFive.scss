@@ -1,0 +1,131 @@
+@import "../utils/container.scss";
+@import "../component/button.scss";
+@import "../palette/palette.scss";
+.section-five {
+  @include container-widths;
+  margin: auto;
+  margin-bottom: 100px;
+  &__header {
+    width: max-content;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: "Poppins";
+    @include themedText;
+  }
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: space-between;
+    &__left {
+      font-size: 4rem;
+      font-weight: 600;
+      font-family: "Poppins";
+    }
+    &__right {
+      width: max-content;
+      @include ornamentalBtn;
+      margin-right: 16px;
+    }
+  }
+  &__img-box {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+    &__special-img {
+      position: relative;
+      &__header {
+        position: absolute;
+        left: 36px;
+        bottom: 80px;
+        font-size: 1.4rem;
+        font-weight: 600;
+        font-family: "Plus Jakarta Sans";
+        @include themedText;
+        width: max-content;
+        letter-spacing: 15%;
+      }
+      &__body {
+        position: absolute;
+        font-family: "Poppins";
+        font-size: 4rem;
+        font-weight: 600;
+        left: 36px;
+        bottom: 20px;
+        color: #ffd9d9;
+      }
+    }
+    div {
+      flex: 0 1 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section-five {
+    &__body {
+      &__left {
+        font-size: 3.2rem;
+      }
+    }
+    &__img-box {
+      flex-wrap: nowrap;
+      overflow: hidden;
+      &__special-img {
+        position: relative;
+        &__header {
+          position: absolute;
+          left: 36px;
+          bottom: 70px;
+          font-size: 1rem;
+          font-weight: 600;
+          font-family: "Plus Jakarta Sans";
+          @include themedText;
+          width: max-content;
+        }
+        &__body {
+          position: absolute;
+          font-family: "Poppins";
+          font-size: 3rem;
+          font-weight: 600;
+          left: 36px;
+          bottom: 20px;
+          color: #ffd9d9;
+        }
+      }
+      img {
+        height: 225px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-five {
+    &__body {
+      &__left {
+        font-size: 2.8rem;
+      }
+    }
+    &__img-box {
+      flex-wrap: wrap;
+      & > div {
+        width: 100%;
+      }
+      & > div:nth-child(n + 4) {
+        display: none;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .section-five {
+    &__img-box {
+      width: 375px;
+    }
+  }
+}
