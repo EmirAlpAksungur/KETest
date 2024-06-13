@@ -4,6 +4,7 @@ import Header from "../layouts/header/Main";
 import SectionOne from "../layouts/sectionOne/Main";
 import SectionTwo from "../layouts/sectionTwo/Main";
 import SectionThree from "../layouts/sectionThree/Main";
+import SectionFour from "../layouts/sectionFour/Main";
 import "../assets/pages/app.scss";
 
 const Main: React.FC = () => {
@@ -13,6 +14,7 @@ const Main: React.FC = () => {
       <SectionOne />
       <SectionTwo />
       <SectionThree />
+      <SectionFour />
     </div>
   );
 };

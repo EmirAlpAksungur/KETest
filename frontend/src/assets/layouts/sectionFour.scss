@@ -1,0 +1,43 @@
+@import "../utils/container.scss";
+@import "../component/button.scss";
+@import "../palette/palette.scss";
+.section-four {
+  @include container-widths;
+  margin: auto;
+  display: flex;
+  margin-bottom: 150px;
+  align-items: center;
+  justify-content: space-between;
+
+  &__item {
+    flex: 1;
+    &__header {
+      font-size: 7rem;
+      font-weight: 600;
+      font-family: "Poppins";
+      @include themedBorder;
+      text-align: center;
+    }
+    &__body {
+      font-size: 1.6rem;
+      font-weight: 600;
+      font-family: "Plus Jakarta Sans";
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section-four {
+    &__item {
+      &__header {
+        font-size: 5.4rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-four {
+    display: none;
+  }
+}

@@ -34,3 +34,15 @@ $greyscale-1000: #0b0a0f;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
+
+@mixin themedBorder() {
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-fill-color: #ffffff;
+  background-clip: text;
+  background-image: linear-gradient(
+    to top,
+    $brand-color-fancy-bottom,
+    $brand-color-fancy-top
+  );
+}
