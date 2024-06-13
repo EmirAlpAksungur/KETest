@@ -1,0 +1,109 @@
+@import "../utils/container.scss";
+@import "../component/button.scss";
+@import "../palette/palette.scss";
+
+.section-nine {
+  @include container-widths;
+  margin: auto;
+  text-align: center;
+  padding: 150px 0px;
+  &__header {
+    width: max-content;
+    margin: auto;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: "Poppins";
+    @include themedText;
+    margin-bottom: 26px;
+  }
+  &__header-secondary {
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: "Poppins";
+    line-height: 40px;
+    margin-bottom: 26px;
+  }
+  &__ball {
+    margin: 30px auto 60px;
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    background: linear-gradient(
+      to top,
+      $brand-color-fancy-bottom,
+      $brand-color-fancy-top
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    &__text {
+      font-family: "Plus Jakarta Sans";
+      font-size: 1.6rem;
+      font-family: 700;
+      color: $secondary-colors-light;
+    }
+    &__logo {
+      margin-bottom: 60px;
+      img {
+        width: 72px;
+        height: 52px;
+      }
+    }
+  }
+  &__social-btn {
+    margin-top: 60px;
+    display: flex;
+    gap: 128px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section-nine {
+    &__header-secondary {
+      font-size: 3.2rem;
+    }
+    &__ball {
+      width: 190px;
+      height: 190px;
+      &__text {
+        font-size: 1.2rem;
+      }
+    }
+    &__logo {
+      img {
+        width: 55px;
+        height: 40px;
+      }
+    }
+    &__social-btn {
+      gap: 64px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-nine {
+    &__header-secondary {
+      font-size: 2.8rem;
+    }
+    &__ball {
+      width: 143px;
+      height: 143px;
+      &__text {
+        font-size: 1rem;
+      }
+    }
+    &__logo {
+      img {
+        width: 72px;
+        height: 52px;
+      }
+    }
+    &__social-btn {
+      gap: 32px;
+    }
+  }
+}
