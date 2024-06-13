@@ -1,0 +1,29 @@
+@import "../utils/container.scss";
+@import "../component/button.scss";
+@import "../palette/palette.scss";
+
+.section-two {
+  @include container-widths;
+  margin: 150px auto;
+  &__header {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 500;
+    font-family: "Inter";
+    color: $secondary-colors-grey;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section-two {
+    &__header {
+      font-size: 1.4rem;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-two {
+    margin-top: 100px auto;
+  }
+}

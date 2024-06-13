@@ -74,18 +74,18 @@
         width: 431.5px;
         height: 538.6px;
       }
-      &__content {
-        &__header {
-          &__walke {
-            letter-spacing: -3.5%;
-          }
-          &__r {
-            letter-spacing: -3.5%;
-          }
+    }
+    &__content {
+      &__header {
+        &__walke {
+          letter-spacing: -3.5%;
         }
-        &__body {
-          font-size: 1.6rem;
+        &__r {
+          letter-spacing: -3.5%;
         }
+      }
+      &__body {
+        font-size: 1.6rem;
       }
     }
   }
@@ -129,11 +129,9 @@
         }
       }
       &__body {
-        font-family: "Plus Jakarta Sans";
-        font-size: 2rem;
-        color: $secondary-colors-grey;
+        font-size: 1.6rem;
         position: relative;
-        top: -40px;
+        top: -45px;
       }
       &__btn {
         margin: 2% auto auto;
